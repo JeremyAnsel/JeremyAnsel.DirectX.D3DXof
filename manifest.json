@@ -1,0 +1,449 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/jeremyansel-directx-d3dxof/JeremyAnsel.DirectX.D3DXof/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimation.html",
+          "hash": "5viW0m4Onz1cpFVryI/odg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimationKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimationKey.html",
+          "hash": "nBypkO9VBqGA4A9hf+4Nzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimationKeyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimationKeyType.html",
+          "hash": "YEq/D/RucmmQnVDildq7rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimationSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XAnimationSet.html",
+          "hash": "aXTUcwxFO8kkWTBWcjFmcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XColorRgb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XColorRgb.html",
+          "hash": "SRWTjAFc2SXU7s4kju76CA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XColorRgba.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XColorRgba.html",
+          "hash": "9G0BA0dV6UTiZcKXokN2fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XCoords2d.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XCoords2d.html",
+          "hash": "Fs6Jyxm5LKCijzjpAefsbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XEffectInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XEffectInstance.html",
+          "hash": "Zk2rABm0EI0eqsHA6mhecw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XFile.html",
+          "hash": "QJsNN0F8fmhexWZC1jLWLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XFrame.html",
+          "hash": "9QFLFRdifMQnXqkPzTAURg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XFrameCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XFrameCamera.html",
+          "hash": "e71RkjMYgMgK1FWPJ34Mjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XMaterial.html",
+          "hash": "v+5dmxnZXLe/Hy6Q1esHwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XMatrix4x4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XMatrix4x4.html",
+          "hash": "G0/GKPZv3Ets8GOVWqvyMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XMesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XMesh.html",
+          "hash": "tJgWmksK5R0iMMWIa3YUGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XSkinWeights.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XSkinWeights.html",
+          "hash": "qqjcdkAjxkvI9FkpILJU3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVector.html",
+          "hash": "bAoUdEW4L91RfIjM4aDZ/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElement.html",
+          "hash": "Sk7OLzCe9fnthcCaByn77g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElementDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElementDataType.html",
+          "hash": "B2JuLGFWvQlxsaMDokhEKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElementMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElementMethod.html",
+          "hash": "lVqdHti4oXe32JfKqsDLIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElementUsage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XVertexElementUsage.html",
+          "hash": "MnI4sCKUkNVLb8gx+fxr3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFile.html",
+          "hash": "RcLFr6q6nC6V1sGrXVuPtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileEnumData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileEnumData.html",
+          "hash": "k9T4+HViRGzEgu1GpqnxvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.html",
+          "hash": "dtFK22ap3Mv8YFbOJu+Feg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.html",
+          "hash": "UBQEKsmK/PzcoJdcdVzolA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileFormats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileFormats.html",
+          "hash": "vpE9GnB8umrLBFSIPTuVXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileSaveData.html",
+          "hash": "89fLkdMaHjK1TT4TmwirSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.html",
+          "hash": "laCac2kGVUIQaMAaYhDJUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.DirectX.D3DXof.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.DirectX.D3DXof.html",
+          "hash": "x4cjLchjakBn13NKhLXZ5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "LONXMskvtqHXf1SwxH6XIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "e+yxC04K7htZgrUkmpCnSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "CSsufB7zTpWVM6cmPmez9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "BpPO/6Jww41QgcyX4+oOQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 28,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
