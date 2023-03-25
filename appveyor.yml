@@ -28,6 +28,7 @@ build:
   verbosity: minimal
 
 after_build:
+- if not defined APPVEYOR_PULL_REQUEST_NUMBER JeremyAnsel.DirectX.D3DXof\build-doc.cmd
 - if not defined APPVEYOR_PULL_REQUEST_NUMBER 7z a JeremyAnsel.DirectX.D3DXof.Documentation.zip .\JeremyAnsel.DirectX.D3DXof\Documentation\_site\* > nul
 - if not defined APPVEYOR_PULL_REQUEST_NUMBER appveyor PushArtifact JeremyAnsel.DirectX.D3DXof.Documentation.zip
 

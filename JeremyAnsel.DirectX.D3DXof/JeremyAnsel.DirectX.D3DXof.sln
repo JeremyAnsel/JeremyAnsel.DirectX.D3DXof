@@ -3,12 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeremyAnsel.DirectX.D3DXof", "JeremyAnsel.DirectX.D3DXof\JeremyAnsel.DirectX.D3DXof.csproj", "{31477A73-B56A-4978-A28D-B4510BF1E4A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeremyAnsel.DirectX.D3DXof", "JeremyAnsel.DirectX.D3DXof\JeremyAnsel.DirectX.D3DXof.csproj", "{31477A73-B56A-4978-A28D-B4510BF1E4A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{BCD017D7-A746-4A17-8C9D-00AD89BF0895}"
-	ProjectSection(ProjectDependencies) = postProject
-		{31477A73-B56A-4978-A28D-B4510BF1E4A9} = {31477A73-B56A-4978-A28D-B4510BF1E4A9}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Documentation", "Documentation\Documentation.csproj", "{BCD017D7-A746-4A17-8C9D-00AD89BF0895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
