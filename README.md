@@ -13,3 +13,9 @@ Documentation   | http://jeremyansel.github.io/JeremyAnsel.DirectX.D3DXof
 Source code     | https://github.com/JeremyAnsel/JeremyAnsel.DirectX.D3DXof
 Nuget           | https://www.nuget.org/packages/JeremyAnsel.DirectX.D3DXof
 Build           | https://ci.appveyor.com/project/JeremyAnsel/jeremyansel-directx-d3dxof/branch/master
+
+# Usage
+
+```csharp
+XFile file = XFile.FromFile(fileName);
+```
