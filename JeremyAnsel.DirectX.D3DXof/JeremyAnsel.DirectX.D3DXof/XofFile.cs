@@ -28,7 +28,7 @@ namespace JeremyAnsel.DirectX.D3DXof
             Marshal.ReleaseComObject(_file);
         }
 
-        public static XofFileEnumObject OpenEnumObject(string path)
+        public static XofFileEnumObject OpenEnumObject(string? path)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -39,11 +39,11 @@ namespace JeremyAnsel.DirectX.D3DXof
             {
                 file.RegisterDefaultTemplates();
 
-                return file.CreateEnumObject(path);
+                return file.CreateEnumObject(path!);
             }
         }
 
-        public static XofFileEnumObject OpenEnumObject(byte[] bytes)
+        public static XofFileEnumObject OpenEnumObject(byte[]? bytes)
         {
             if (bytes == null)
             {
@@ -64,7 +64,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileEnumObject CreateEnumObject(string path)
+        public XofFileEnumObject CreateEnumObject(string? path)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -85,7 +85,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileEnumObject CreateEnumObject(byte[] bytes)
+        public XofFileEnumObject CreateEnumObject(byte[]? bytes)
         {
             if (bytes == null)
             {
@@ -116,7 +116,7 @@ namespace JeremyAnsel.DirectX.D3DXof
             }
         }
 
-        public static XofFileSaveObject OpenSaveObject(string path, XofFileFormats format)
+        public static XofFileSaveObject OpenSaveObject(string? path, XofFileFormats format)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -127,12 +127,12 @@ namespace JeremyAnsel.DirectX.D3DXof
             {
                 file.RegisterDefaultTemplates();
 
-                return file.CreateSaveObject(path, format);
+                return file.CreateSaveObject(path!, format);
             }
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileSaveObject CreateSaveObject(string path, XofFileFormats format)
+        public XofFileSaveObject CreateSaveObject(string? path, XofFileFormats format)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -153,7 +153,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void RegisterTemplates(string template)
+        public void RegisterTemplates(string? template)
         {
             if (string.IsNullOrEmpty(template))
             {
@@ -174,7 +174,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void RegisterTemplates(byte[] bytes)
+        public void RegisterTemplates(byte[]? bytes)
         {
             if (bytes == null)
             {
@@ -193,7 +193,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void RegisterEnumObjectTemplates(XofFileEnumObject enumObject)
+        public void RegisterEnumObjectTemplates(XofFileEnumObject? enumObject)
         {
             if (enumObject == null)
             {

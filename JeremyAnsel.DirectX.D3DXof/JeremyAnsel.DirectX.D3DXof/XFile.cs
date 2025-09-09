@@ -7,7 +7,7 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XFile
     {
-        public Version FileVersion { get; set; }
+        public Version? FileVersion { get; set; }
 
         public int FileFlags { get; set; }
 
@@ -21,17 +21,17 @@ namespace JeremyAnsel.DirectX.D3DXof
 
         public int AnimTicksPerSecond { get; set; }
 
-        public static XFile FromFile(string fileName)
+        public static XFile FromFile(string? fileName)
         {
             if (string.IsNullOrEmpty(fileName))
             {
                 throw new ArgumentNullException(nameof(fileName));
             }
 
-            return XFileReader.ReadFile(fileName);
+            return XFileReader.ReadFile(fileName!);
         }
 
-        public static XFile FromBytes(byte[] fileBytes)
+        public static XFile FromBytes(byte[]? fileBytes)
         {
             if (fileBytes == null)
             {
@@ -46,7 +46,7 @@ namespace JeremyAnsel.DirectX.D3DXof
             return XFileReader.ReadFile(fileBytes);
         }
 
-        public static XFile FromStream(Stream stream)
+        public static XFile FromStream(Stream? stream)
         {
             if (stream == null)
             {
@@ -65,24 +65,24 @@ namespace JeremyAnsel.DirectX.D3DXof
             return XFile.FromBytes(bytes);
         }
 
-        public void Save(string fileName)
+        public void Save(string? fileName)
         {
             if (string.IsNullOrEmpty(fileName))
             {
                 throw new ArgumentNullException(nameof(fileName));
             }
 
-            Save(fileName, XofFileFormats.Binary);
+            Save(fileName!, XofFileFormats.Binary);
         }
 
-        public void Save(string fileName, XofFileFormats format)
+        public void Save(string? fileName, XofFileFormats format)
         {
             if (string.IsNullOrEmpty(fileName))
             {
                 throw new ArgumentNullException(nameof(fileName));
             }
 
-            XFileWriter.WriteFile(this, fileName, format);
+            XFileWriter.WriteFile(this, fileName!, format);
         }
     }
 }

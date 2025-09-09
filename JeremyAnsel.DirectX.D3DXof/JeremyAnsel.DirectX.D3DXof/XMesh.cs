@@ -7,7 +7,7 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XMesh
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public List<XVector> Vertices { get; } = new List<XVector>();
 
@@ -27,7 +27,7 @@ namespace JeremyAnsel.DirectX.D3DXof
 
 
         [SuppressMessage("Performance", "CA1819:Les propriétés ne doivent pas retourner de tableaux", Justification = "Reviewed.")]
-        public int[] VertexDuplicationIndices { get; set; }
+        public int[]? VertexDuplicationIndices { get; set; }
 
         public List<Tuple<int, XColorRgba>> VertexColors { get; } = new List<Tuple<int, XColorRgba>>();
 
@@ -47,9 +47,9 @@ namespace JeremyAnsel.DirectX.D3DXof
 
 
         [SuppressMessage("Performance", "CA1819:Les propriétés ne doivent pas retourner de tableaux", Justification = "Reviewed.")]
-        public uint[] VertexElementsData { get; set; }
+        public uint[]? VertexElementsData { get; set; }
 
-        public override string ToString()
+        public override string? ToString()
         {
             return this.Name;
         }

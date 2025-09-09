@@ -6,9 +6,9 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XAnimation
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public string FrameReference { get; set; }
+        public string? FrameReference { get; set; }
 
         public List<XAnimationKey> Keys { get; } = new List<XAnimationKey>();
 

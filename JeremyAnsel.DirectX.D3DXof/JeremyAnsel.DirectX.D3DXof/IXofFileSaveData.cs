@@ -23,13 +23,13 @@ namespace JeremyAnsel.DirectX.D3DXof
 
         IXofFileSaveData AddDataObject(
             ref Guid template,
-            [MarshalAs(UnmanagedType.LPStr)] string name,
+            [MarshalAs(UnmanagedType.LPStr)] string? name,
             IntPtr id,
             IntPtr size,
             IntPtr data);
 
         void AddDataReference(
-            [MarshalAs(UnmanagedType.LPStr)] string name,
+            [MarshalAs(UnmanagedType.LPStr)] string? name,
             IntPtr id);
     }
 }

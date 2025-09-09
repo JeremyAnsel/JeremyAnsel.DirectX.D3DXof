@@ -35,7 +35,7 @@ namespace JeremyAnsel.DirectX.D3DXof
 
         IntPtr GetChildren();
 
-        IXofFileData GetChild(
+        IXofFileData? GetChild(
             IntPtr id);
     }
 }

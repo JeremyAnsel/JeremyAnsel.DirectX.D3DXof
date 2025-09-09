@@ -6,7 +6,7 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XofFileFormatConverter
     {
-        public static void Convert(string inputFilename, string outputFilename, XofFileFormats format)
+        public static void Convert(string? inputFilename, string? outputFilename, XofFileFormats format)
         {
             if (string.IsNullOrEmpty(inputFilename))
             {
@@ -18,16 +18,14 @@ namespace JeremyAnsel.DirectX.D3DXof
                 throw new ArgumentNullException(nameof(outputFilename));
             }
 
-            using (var enumObject = XofFile.OpenEnumObject(inputFilename))
-            using (var saveObject = XofFile.OpenSaveObject(outputFilename, format))
-            {
-                ConvertObject(enumObject, saveObject);
+            using var enumObject = XofFile.OpenEnumObject(inputFilename);
+            using var saveObject = XofFile.OpenSaveObject(outputFilename, format);
+            ConvertObject(enumObject, saveObject);
 
-                saveObject.Save();
-            }
+            saveObject.Save();
         }
 
-        public static void Convert(byte[] inputBytes, string outputFilename, XofFileFormats format)
+        public static void Convert(byte[]? inputBytes, string? outputFilename, XofFileFormats format)
         {
             if (inputBytes == null)
             {
@@ -44,13 +42,11 @@ namespace JeremyAnsel.DirectX.D3DXof
                 throw new ArgumentNullException(nameof(outputFilename));
             }
 
-            using (var enumObject = XofFile.OpenEnumObject(inputBytes))
-            using (var saveObject = XofFile.OpenSaveObject(outputFilename, format))
-            {
-                ConvertObject(enumObject, saveObject);
+            using var enumObject = XofFile.OpenEnumObject(inputBytes);
+            using var saveObject = XofFile.OpenSaveObject(outputFilename, format);
+            ConvertObject(enumObject, saveObject);
 
-                saveObject.Save();
-            }
+            saveObject.Save();
         }
 
         private static void ConvertObject(XofFileEnumObject enumObject, XofFileSaveObject saveObject)
@@ -59,11 +55,15 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int i = 0; i < count; i++)
             {
-                using (var enumData = enumObject.GetChild(i))
-                using (var saveData = saveObject.AddData(enumData))
+                using var enumData = enumObject.GetChild(i);
+
+                if (enumData is null)
                 {
-                    ConvertData(enumData, saveData);
+                    continue;
                 }
+
+                using var saveData = saveObject.AddData(enumData);
+                ConvertData(enumData, saveData);
             }
         }
 
@@ -73,19 +73,21 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int i = 0; i < count; i++)
             {
-                using (var child = enumData.GetChild(i))
+                using var child = enumData.GetChild(i);
+
+                if (child is null)
                 {
-                    if (child.IsReference())
-                    {
-                        saveData.AddDataReference(child);
-                    }
-                    else
-                    {
-                        using (var saveChild = saveData.AddData(child))
-                        {
-                            ConvertData(child, saveChild);
-                        }
-                    }
+                    continue;
+                }
+
+                if (child.IsReference())
+                {
+                    saveData.AddDataReference(child);
+                }
+                else
+                {
+                    using var saveChild = saveData.AddData(child);
+                    ConvertData(child, saveChild);
                 }
             }
         }

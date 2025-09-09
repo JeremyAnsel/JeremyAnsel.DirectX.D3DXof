@@ -6,11 +6,11 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XFrame
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public XMatrix4x4 TransformMatrix { get; set; }
+        public XMatrix4x4? TransformMatrix { get; set; }
 
-        public XFrameCamera FrameCamera { get; set; }
+        public XFrameCamera? FrameCamera { get; set; }
 
         public List<XMesh> Meshes { get; } = new List<XMesh>();
 

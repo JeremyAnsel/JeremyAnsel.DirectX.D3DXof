@@ -7,21 +7,21 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XMaterial
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public bool IsReference { get; set; }
 
-        public XColorRgba FaceColor { get; set; }
+        public XColorRgba? FaceColor { get; set; }
 
         public float Power { get; set; }
 
-        public XColorRgb SpecularColor { get; set; }
+        public XColorRgb? SpecularColor { get; set; }
 
-        public XColorRgb EmissiveColor { get; set; }
+        public XColorRgb? EmissiveColor { get; set; }
 
-        public string Filename { get; set; }
+        public string? Filename { get; set; }
 
-        public XEffectInstance EffectInstance { get; set; }
+        public XEffectInstance? EffectInstance { get; set; }
 
         public override string ToString()
         {

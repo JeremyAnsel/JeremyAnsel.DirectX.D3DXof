@@ -11,17 +11,17 @@ namespace JeremyAnsel.DirectX.D3DXof
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     internal interface IXofFileEnumObject
     {
-        IXofFile GetFile();
+        IXofFile? GetFile();
 
         IntPtr GetChildren();
 
-        IXofFileData GetChild(
+        IXofFileData? GetChild(
             IntPtr id);
 
-        IXofFileData GetDataObjectById(
+        IXofFileData? GetDataObjectById(
             ref Guid id);
 
-        IXofFileData GetDataObjectByName(
+        IXofFileData? GetDataObjectByName(
             [MarshalAs(UnmanagedType.LPStr)] string name);
     }
 }

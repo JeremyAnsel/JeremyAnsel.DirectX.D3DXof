@@ -52,6 +52,11 @@ namespace JeremyAnsel.DirectX.D3DXof
 
         private static void WriteHeader(XFile file, XofFileSaveObject saveObject)
         {
+            if (file.FileVersion is null)
+            {
+                return;
+            }
+
             byte[] data;
 
             using (var ms = new MemoryStream())
@@ -443,7 +448,7 @@ namespace JeremyAnsel.DirectX.D3DXof
             using (var ms = new MemoryStream())
             using (var writer = new BinaryWriter(ms))
             {
-                WriteString(effect.EffectFilename, writer);
+                WriteString(effect.EffectFilename ?? string.Empty, writer);
 
                 data = ms.ToArray();
             }

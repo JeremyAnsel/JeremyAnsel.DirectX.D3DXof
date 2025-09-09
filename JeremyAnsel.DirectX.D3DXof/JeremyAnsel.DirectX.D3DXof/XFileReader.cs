@@ -30,52 +30,54 @@ namespace JeremyAnsel.DirectX.D3DXof
 
                 for (int childIndex = 0; childIndex < childrenCount; childIndex++)
                 {
-#pragma warning disable CA2000 // Supprimer les objets avant la mise hors de portée
-                    using (var child = enumObject.GetChild(childIndex))
-#pragma warning restore CA2000 // Supprimer les objets avant la mise hors de portée
+                    using var child = enumObject.GetChild(childIndex);
+
+                    if (child is null)
                     {
-                        Guid type = child.GetTemplateType();
+                        continue;
+                    }
 
-                        if (type == XofFileDefaultTemplates.HeaderId)
-                        {
-                            if (headerRead)
-                            {
-                                throw new InvalidDataException();
-                            }
+                    Guid type = child.GetTemplateType();
 
-                            ReadHeader(file, child);
-                            headerRead = true;
-                        }
-                        else if (type == XofFileDefaultTemplates.MeshId)
-                        {
-                            file.Meshes.Add(ReadMesh(child));
-                        }
-                        else if (type == XofFileDefaultTemplates.MaterialId)
-                        {
-                            file.Materials.Add(ReadMaterial(child));
-                        }
-                        else if (type == XofFileDefaultTemplates.FrameId)
-                        {
-                            file.Frames.Add(ReadFrame(child));
-                        }
-                        else if (type == XofFileDefaultTemplates.AnimationSetId)
-                        {
-                            file.AnimationSets.Add(ReadAnimationSet(child));
-                        }
-                        else if (type == XofFileDefaultTemplates.AnimTicksPerSecondId)
-                        {
-                            if (animTicksPerSecondRead)
-                            {
-                                throw new InvalidDataException();
-                            }
-
-                            file.AnimTicksPerSecond = ReadAnimTicksPerSecond(child);
-                            animTicksPerSecondRead = true;
-                        }
-                        else
+                    if (type == XofFileDefaultTemplates.HeaderId)
+                    {
+                        if (headerRead)
                         {
                             throw new InvalidDataException();
                         }
+
+                        ReadHeader(file, child);
+                        headerRead = true;
+                    }
+                    else if (type == XofFileDefaultTemplates.MeshId)
+                    {
+                        file.Meshes.Add(ReadMesh(child));
+                    }
+                    else if (type == XofFileDefaultTemplates.MaterialId)
+                    {
+                        file.Materials.Add(ReadMaterial(child));
+                    }
+                    else if (type == XofFileDefaultTemplates.FrameId)
+                    {
+                        file.Frames.Add(ReadFrame(child));
+                    }
+                    else if (type == XofFileDefaultTemplates.AnimationSetId)
+                    {
+                        file.AnimationSets.Add(ReadAnimationSet(child));
+                    }
+                    else if (type == XofFileDefaultTemplates.AnimTicksPerSecondId)
+                    {
+                        if (animTicksPerSecondRead)
+                        {
+                            throw new InvalidDataException();
+                        }
+
+                        file.AnimTicksPerSecond = ReadAnimTicksPerSecond(child);
+                        animTicksPerSecondRead = true;
+                    }
+                    else
+                    {
+                        throw new InvalidDataException();
                     }
                 }
             }
@@ -188,100 +190,104 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
+                using var child = enumData.GetChild(childIndex);
+
+                if (child is null)
                 {
-                    Guid type = child.GetTemplateType();
+                    continue;
+                }
 
-                    if (type == XofFileDefaultTemplates.MeshNormalsId)
-                    {
-                        if (meshNormalsRead)
-                        {
-                            mesh.Normals.Clear();
-                            mesh.FacesNormalsIndices.Clear();
-                            //throw new InvalidDataException();
-                        }
+                Guid type = child.GetTemplateType();
 
-                        ReadMeshNormals(mesh, child);
-                        meshNormalsRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.MeshTextureCoordsId)
+                if (type == XofFileDefaultTemplates.MeshNormalsId)
+                {
+                    if (meshNormalsRead)
                     {
-                        if (meshTextureCoordsRead)
-                        {
-                            throw new InvalidDataException();
-                        }
+                        mesh.Normals.Clear();
+                        mesh.FacesNormalsIndices.Clear();
+                        //throw new InvalidDataException();
+                    }
 
-                        ReadMeshTextureCoords(mesh, child);
-                        meshTextureCoordsRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.MeshMaterialListId)
-                    {
-                        if (meshMaterialListRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadMeshMaterialList(mesh, child);
-                        meshMaterialListRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.VertexDuplicationIndicesId)
-                    {
-                        if (vertexDuplicationIndicesRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadVertexDuplicationIndices(mesh, child);
-                        vertexDuplicationIndicesRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.FVFDataId)
-                    {
-                        if (fvfDataRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadFVFData(mesh, child);
-                        fvfDataRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.MeshVertexColorsId)
-                    {
-                        if (meshVertexColorsIdRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadMeshVertexColors(mesh, child);
-                        meshVertexColorsIdRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.DeclDataId)
-                    {
-                        if (declDataRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadDeclData(mesh, child);
-                        declDataRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.XSkinMeshHeaderId)
-                    {
-                        if (xSkinMeshHeaderRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadXSkinMeshHeader(mesh, child);
-                        xSkinMeshHeaderRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.SkinWeightsId)
-                    {
-                        mesh.SkinWeights.Add(ReadSkinWeights(child));
-                    }
-                    else
+                    ReadMeshNormals(mesh, child);
+                    meshNormalsRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.MeshTextureCoordsId)
+                {
+                    if (meshTextureCoordsRead)
                     {
                         throw new InvalidDataException();
                     }
+
+                    ReadMeshTextureCoords(mesh, child);
+                    meshTextureCoordsRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.MeshMaterialListId)
+                {
+                    if (meshMaterialListRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadMeshMaterialList(mesh, child);
+                    meshMaterialListRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.VertexDuplicationIndicesId)
+                {
+                    if (vertexDuplicationIndicesRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadVertexDuplicationIndices(mesh, child);
+                    vertexDuplicationIndicesRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.FVFDataId)
+                {
+                    if (fvfDataRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadFVFData(mesh, child);
+                    fvfDataRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.MeshVertexColorsId)
+                {
+                    if (meshVertexColorsIdRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadMeshVertexColors(mesh, child);
+                    meshVertexColorsIdRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.DeclDataId)
+                {
+                    if (declDataRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadDeclData(mesh, child);
+                    declDataRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.XSkinMeshHeaderId)
+                {
+                    if (xSkinMeshHeaderRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadXSkinMeshHeader(mesh, child);
+                    xSkinMeshHeaderRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.SkinWeightsId)
+                {
+                    mesh.SkinWeights.Add(ReadSkinWeights(child));
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 
@@ -388,18 +394,22 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
-                {
-                    Guid type = child.GetTemplateType();
+                using var child = enumData.GetChild(childIndex);
 
-                    if (type == XofFileDefaultTemplates.MaterialId)
-                    {
-                        mesh.Materials.Add(ReadMaterial(child));
-                    }
-                    else
-                    {
-                        throw new InvalidDataException();
-                    }
+                if (child is null)
+                {
+                    continue;
+                }
+
+                Guid type = child.GetTemplateType();
+
+                if (type == XofFileDefaultTemplates.MaterialId)
+                {
+                    mesh.Materials.Add(ReadMaterial(child));
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 
@@ -593,34 +603,38 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
+                using var child = enumData.GetChild(childIndex);
+
+                if (child is null)
                 {
-                    Guid type = child.GetTemplateType();
+                    continue;
+                }
 
-                    if (type == XofFileDefaultTemplates.TextureFilenameId)
-                    {
-                        if (textureFilenameRead)
-                        {
-                            throw new InvalidDataException();
-                        }
+                Guid type = child.GetTemplateType();
 
-                        material.Filename = ReadTextureFilename(child);
-                        textureFilenameRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.EffectInstanceId)
-                    {
-                        if (effectInstanceRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        material.EffectInstance = ReadEffectInstance(child);
-                        effectInstanceRead = true;
-                    }
-                    else
+                if (type == XofFileDefaultTemplates.TextureFilenameId)
+                {
+                    if (textureFilenameRead)
                     {
                         throw new InvalidDataException();
                     }
+
+                    material.Filename = ReadTextureFilename(child);
+                    textureFilenameRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.EffectInstanceId)
+                {
+                    if (effectInstanceRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    material.EffectInstance = ReadEffectInstance(child);
+                    effectInstanceRead = true;
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 
@@ -676,26 +690,30 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
-                {
-                    Guid type = child.GetTemplateType();
+                using var child = enumData.GetChild(childIndex);
 
-                    if (type == XofFileDefaultTemplates.EffectParamDWordId)
-                    {
-                        effect.IntegerParameters.Add(ReadEffectParamDWord(child));
-                    }
-                    else if (type == XofFileDefaultTemplates.EffectParamFloatsId)
-                    {
-                        effect.FloatParameters.Add(ReadEffectParamFloats(child));
-                    }
-                    else if (type == XofFileDefaultTemplates.EffectParamStringId)
-                    {
-                        effect.StringParameters.Add(ReadEffectParamString(child));
-                    }
-                    else
-                    {
-                        throw new InvalidDataException();
-                    }
+                if (child is null)
+                {
+                    continue;
+                }
+
+                Guid type = child.GetTemplateType();
+
+                if (type == XofFileDefaultTemplates.EffectParamDWordId)
+                {
+                    effect.IntegerParameters.Add(ReadEffectParamDWord(child));
+                }
+                else if (type == XofFileDefaultTemplates.EffectParamFloatsId)
+                {
+                    effect.FloatParameters.Add(ReadEffectParamFloats(child));
+                }
+                else if (type == XofFileDefaultTemplates.EffectParamStringId)
+                {
+                    effect.StringParameters.Add(ReadEffectParamString(child));
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 
@@ -812,46 +830,50 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
+                using var child = enumData.GetChild(childIndex);
+
+                if (child is null)
                 {
-                    Guid type = child.GetTemplateType();
+                    continue;
+                }
 
-                    if (type == XofFileDefaultTemplates.FrameTransformMatrixId)
-                    {
-                        if (frameTransformMatrixRead)
-                        {
-                            throw new InvalidDataException();
-                        }
+                Guid type = child.GetTemplateType();
 
-                        ReadFrameTransformMatrix(frame, child);
-                        frameTransformMatrixRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.FrameId)
-                    {
-                        frame.Frames.Add(ReadFrame(child));
-                    }
-                    else if (type == XofFileDefaultTemplates.MeshId)
-                    {
-                        frame.Meshes.Add(ReadMesh(child));
-                    }
-                    else if (type == XofFileDefaultTemplates.FrameMeshNameId)
-                    {
-                        ReadFrameMeshName(frame, child);
-                    }
-                    else if (type == XofFileDefaultTemplates.FrameCameraId)
-                    {
-                        if (frameCameraRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadFrameCamera(frame, child);
-                        frameCameraRead = true;
-                    }
-                    else
+                if (type == XofFileDefaultTemplates.FrameTransformMatrixId)
+                {
+                    if (frameTransformMatrixRead)
                     {
                         throw new InvalidDataException();
                     }
+
+                    ReadFrameTransformMatrix(frame, child);
+                    frameTransformMatrixRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.FrameId)
+                {
+                    frame.Frames.Add(ReadFrame(child));
+                }
+                else if (type == XofFileDefaultTemplates.MeshId)
+                {
+                    frame.Meshes.Add(ReadMesh(child));
+                }
+                else if (type == XofFileDefaultTemplates.FrameMeshNameId)
+                {
+                    ReadFrameMeshName(frame, child);
+                }
+                else if (type == XofFileDefaultTemplates.FrameCameraId)
+                {
+                    if (frameCameraRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadFrameCamera(frame, child);
+                    frameCameraRead = true;
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 
@@ -943,18 +965,22 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
-                {
-                    Guid type = child.GetTemplateType();
+                using var child = enumData.GetChild(childIndex);
 
-                    if (type == XofFileDefaultTemplates.AnimationId)
-                    {
-                        animationSet.Animations.Add(ReadAnimation(child));
-                    }
-                    else
-                    {
-                        throw new InvalidDataException();
-                    }
+                if (child is null)
+                {
+                    continue;
+                }
+
+                Guid type = child.GetTemplateType();
+
+                if (type == XofFileDefaultTemplates.AnimationId)
+                {
+                    animationSet.Animations.Add(ReadAnimation(child));
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 
@@ -982,43 +1008,47 @@ namespace JeremyAnsel.DirectX.D3DXof
 
             for (int childIndex = 0; childIndex < childrenCount; childIndex++)
             {
-                using (var child = enumData.GetChild(childIndex))
+                using var child = enumData.GetChild(childIndex);
+
+                if (child is null)
                 {
-                    Guid type = child.GetTemplateType();
+                    continue;
+                }
 
-                    if (type == XofFileDefaultTemplates.FrameId)
-                    {
-                        if (frameRead)
-                        {
-                            throw new InvalidDataException();
-                        }
+                Guid type = child.GetTemplateType();
 
-                        if (!child.IsReference())
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        animaton.FrameReference = child.GetName();
-                        frameRead = true;
-                    }
-                    else if (type == XofFileDefaultTemplates.AnimationKeyId)
-                    {
-                        animaton.Keys.Add(ReadAnimationKey(child));
-                    }
-                    else if (type == XofFileDefaultTemplates.AnimationOptionsId)
-                    {
-                        if (animationOptionsRead)
-                        {
-                            throw new InvalidDataException();
-                        }
-
-                        ReadAnimationOptions(animaton, child);
-                        animationOptionsRead = true;
-                    }
-                    else
+                if (type == XofFileDefaultTemplates.FrameId)
+                {
+                    if (frameRead)
                     {
                         throw new InvalidDataException();
                     }
+
+                    if (!child.IsReference())
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    animaton.FrameReference = child.GetName();
+                    frameRead = true;
+                }
+                else if (type == XofFileDefaultTemplates.AnimationKeyId)
+                {
+                    animaton.Keys.Add(ReadAnimationKey(child));
+                }
+                else if (type == XofFileDefaultTemplates.AnimationOptionsId)
+                {
+                    if (animationOptionsRead)
+                    {
+                        throw new InvalidDataException();
+                    }
+
+                    ReadAnimationOptions(animaton, child);
+                    animationOptionsRead = true;
+                }
+                else
+                {
+                    throw new InvalidDataException();
                 }
             }
 

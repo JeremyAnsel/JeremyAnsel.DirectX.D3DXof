@@ -6,9 +6,9 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XEffectInstance
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public string EffectFilename { get; set; }
+        public string? EffectFilename { get; set; }
 
         public List<Tuple<string, int>> IntegerParameters { get; } = new List<Tuple<string, int>>();
 

@@ -144,9 +144,16 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileEnumData GetChild(int index)
+        public XofFileEnumData? GetChild(int index)
         {
-            return new XofFileEnumData(_data.GetChild(new IntPtr(index)));
+            IXofFileData? child = _data.GetChild(new IntPtr(index));
+
+            if (child is null)
+            {
+                return null;
+            }
+
+            return new XofFileEnumData(child);
         }
     }
 }

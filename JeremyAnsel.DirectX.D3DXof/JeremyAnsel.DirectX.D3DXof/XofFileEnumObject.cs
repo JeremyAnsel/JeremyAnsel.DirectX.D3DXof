@@ -22,9 +22,16 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFile GetFile()
+        public XofFile? GetFile()
         {
-            return new XofFile(_enumObject.GetFile());
+            IXofFile? file = _enumObject.GetFile();
+
+            if (file is null)
+            {
+                return null;
+            }
+
+            return new XofFile(file);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -34,17 +41,31 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileEnumData GetChild(int index)
+        public XofFileEnumData? GetChild(int index)
         {
-            return new XofFileEnumData(_enumObject.GetChild(new IntPtr(index)));
+            IXofFileData? data = _enumObject.GetChild(new IntPtr(index));
+
+            if (data is null)
+            {
+                return null;
+            }
+
+            return new XofFileEnumData(data);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileEnumData GetDataObjectById(Guid id)
+        public XofFileEnumData? GetDataObjectById(Guid id)
         {
             try
             {
-                return new XofFileEnumData(_enumObject.GetDataObjectById(ref id));
+                IXofFileData? data = _enumObject.GetDataObjectById(ref id);
+
+                if (data is null)
+                {
+                    return null;
+                }
+
+                return new XofFileEnumData(data);
             }
             catch (Exception ex)
             {
@@ -59,11 +80,23 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileEnumData GetDataObjectByName(string name)
+        public XofFileEnumData? GetDataObjectByName(string? name)
         {
+            if (string.IsNullOrEmpty(name))
+            {
+                return null;
+            }
+
             try
             {
-                return new XofFileEnumData(_enumObject.GetDataObjectByName(name));
+                IXofFileData? data = _enumObject.GetDataObjectByName(name!);
+
+                if (data is null)
+                {
+                    return null;
+                }
+
+                return new XofFileEnumData(data);
             }
             catch (Exception ex)
             {

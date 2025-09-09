@@ -6,7 +6,7 @@ namespace JeremyAnsel.DirectX.D3DXof
 {
     public sealed class XAnimationKey
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public XAnimationKeyType KeyType { get; set; }
 

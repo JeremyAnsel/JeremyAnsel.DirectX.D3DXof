@@ -82,7 +82,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public XofFileSaveData AddData(Guid template, string name, Guid? id, byte[] data)
+        public XofFileSaveData AddData(Guid template, string? name, Guid? id, byte[]? data)
         {
             GCHandle idHandle = default;
 
@@ -111,7 +111,7 @@ namespace JeremyAnsel.DirectX.D3DXof
             }
         }
 
-        public XofFileSaveData AddData(XofFileEnumData child)
+        public XofFileSaveData AddData(XofFileEnumData? child)
         {
             if (child == null)
             {
@@ -122,7 +122,7 @@ namespace JeremyAnsel.DirectX.D3DXof
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void AddDataReference(string name, Guid? id)
+        public void AddDataReference(string? name, Guid? id)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -149,7 +149,7 @@ namespace JeremyAnsel.DirectX.D3DXof
             }
         }
 
-        public void AddDataReference(XofFileEnumData child)
+        public void AddDataReference(XofFileEnumData? child)
         {
             if (child == null)
             {
