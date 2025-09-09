@@ -502,13 +502,13 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XFile.Frames
   nameWithType: XFile.Frames
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.FromBytes(System.Byte[])
-  name: FromBytes(byte[])
+  name: FromBytes(byte[]?)
   href: api/JeremyAnsel.DirectX.D3DXof.XFile.html#JeremyAnsel_DirectX_D3DXof_XFile_FromBytes_System_Byte___
   commentId: M:JeremyAnsel.DirectX.D3DXof.XFile.FromBytes(System.Byte[])
   name.vb: FromBytes(Byte())
-  fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromBytes(byte[])
+  fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromBytes(byte[]?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XFile.FromBytes(Byte())
-  nameWithType: XFile.FromBytes(byte[])
+  nameWithType: XFile.FromBytes(byte[]?)
   nameWithType.vb: XFile.FromBytes(Byte())
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.FromBytes*
   name: FromBytes
@@ -518,13 +518,13 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromBytes
   nameWithType: XFile.FromBytes
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.FromFile(System.String)
-  name: FromFile(string)
+  name: FromFile(string?)
   href: api/JeremyAnsel.DirectX.D3DXof.XFile.html#JeremyAnsel_DirectX_D3DXof_XFile_FromFile_System_String_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XFile.FromFile(System.String)
   name.vb: FromFile(String)
-  fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromFile(string)
+  fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromFile(string?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XFile.FromFile(String)
-  nameWithType: XFile.FromFile(string)
+  nameWithType: XFile.FromFile(string?)
   nameWithType.vb: XFile.FromFile(String)
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.FromFile*
   name: FromFile
@@ -534,11 +534,14 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromFile
   nameWithType: XFile.FromFile
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.FromStream(System.IO.Stream)
-  name: FromStream(Stream)
+  name: FromStream(Stream?)
   href: api/JeremyAnsel.DirectX.D3DXof.XFile.html#JeremyAnsel_DirectX_D3DXof_XFile_FromStream_System_IO_Stream_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XFile.FromStream(System.IO.Stream)
-  fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromStream(System.IO.Stream)
-  nameWithType: XFile.FromStream(Stream)
+  name.vb: FromStream(Stream)
+  fullName: JeremyAnsel.DirectX.D3DXof.XFile.FromStream(System.IO.Stream?)
+  fullName.vb: JeremyAnsel.DirectX.D3DXof.XFile.FromStream(System.IO.Stream)
+  nameWithType: XFile.FromStream(Stream?)
+  nameWithType.vb: XFile.FromStream(Stream)
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.FromStream*
   name: FromStream
   href: api/JeremyAnsel.DirectX.D3DXof.XFile.html#JeremyAnsel_DirectX_D3DXof_XFile_FromStream_
@@ -573,22 +576,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XFile.Meshes
   nameWithType: XFile.Meshes
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.Save(System.String)
-  name: Save(string)
+  name: Save(string?)
   href: api/JeremyAnsel.DirectX.D3DXof.XFile.html#JeremyAnsel_DirectX_D3DXof_XFile_Save_System_String_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XFile.Save(System.String)
   name.vb: Save(String)
-  fullName: JeremyAnsel.DirectX.D3DXof.XFile.Save(string)
+  fullName: JeremyAnsel.DirectX.D3DXof.XFile.Save(string?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XFile.Save(String)
-  nameWithType: XFile.Save(string)
+  nameWithType: XFile.Save(string?)
   nameWithType.vb: XFile.Save(String)
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.Save(System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  name: Save(string, XofFileFormats)
+  name: Save(string?, XofFileFormats)
   href: api/JeremyAnsel.DirectX.D3DXof.XFile.html#JeremyAnsel_DirectX_D3DXof_XFile_Save_System_String_JeremyAnsel_DirectX_D3DXof_XofFileFormats_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XFile.Save(System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   name.vb: Save(String, XofFileFormats)
-  fullName: JeremyAnsel.DirectX.D3DXof.XFile.Save(string, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
+  fullName: JeremyAnsel.DirectX.D3DXof.XFile.Save(string?, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XFile.Save(String, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  nameWithType: XFile.Save(string, XofFileFormats)
+  nameWithType: XFile.Save(string?, XofFileFormats)
   nameWithType.vb: XFile.Save(String, XofFileFormats)
 - uid: JeremyAnsel.DirectX.D3DXof.XFile.Save*
   name: Save
@@ -1625,22 +1628,22 @@ references:
   nameWithType: XofFile.XofFile
   nameWithType.vb: XofFile.New
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(System.Byte[])
-  name: CreateEnumObject(byte[])
+  name: CreateEnumObject(byte[]?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_CreateEnumObject_System_Byte___
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(System.Byte[])
   name.vb: CreateEnumObject(Byte())
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(byte[])
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(byte[]?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(Byte())
-  nameWithType: XofFile.CreateEnumObject(byte[])
+  nameWithType: XofFile.CreateEnumObject(byte[]?)
   nameWithType.vb: XofFile.CreateEnumObject(Byte())
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(System.String)
-  name: CreateEnumObject(string)
+  name: CreateEnumObject(string?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_CreateEnumObject_System_String_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(System.String)
   name.vb: CreateEnumObject(String)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(string)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(string?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject(String)
-  nameWithType: XofFile.CreateEnumObject(string)
+  nameWithType: XofFile.CreateEnumObject(string?)
   nameWithType.vb: XofFile.CreateEnumObject(String)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject*
   name: CreateEnumObject
@@ -1650,13 +1653,13 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateEnumObject
   nameWithType: XofFile.CreateEnumObject
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.CreateSaveObject(System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  name: CreateSaveObject(string, XofFileFormats)
+  name: CreateSaveObject(string?, XofFileFormats)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_CreateSaveObject_System_String_JeremyAnsel_DirectX_D3DXof_XofFileFormats_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.CreateSaveObject(System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   name.vb: CreateSaveObject(String, XofFileFormats)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateSaveObject(string, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.CreateSaveObject(string?, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.CreateSaveObject(String, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  nameWithType: XofFile.CreateSaveObject(string, XofFileFormats)
+  nameWithType: XofFile.CreateSaveObject(string?, XofFileFormats)
   nameWithType.vb: XofFile.CreateSaveObject(String, XofFileFormats)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.CreateSaveObject*
   name: CreateSaveObject
@@ -1679,22 +1682,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFile.Dispose
   nameWithType: XofFile.Dispose
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(System.Byte[])
-  name: OpenEnumObject(byte[])
+  name: OpenEnumObject(byte[]?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_OpenEnumObject_System_Byte___
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(System.Byte[])
   name.vb: OpenEnumObject(Byte())
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(byte[])
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(byte[]?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(Byte())
-  nameWithType: XofFile.OpenEnumObject(byte[])
+  nameWithType: XofFile.OpenEnumObject(byte[]?)
   nameWithType.vb: XofFile.OpenEnumObject(Byte())
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(System.String)
-  name: OpenEnumObject(string)
+  name: OpenEnumObject(string?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_OpenEnumObject_System_String_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(System.String)
   name.vb: OpenEnumObject(String)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(string)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(string?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject(String)
-  nameWithType: XofFile.OpenEnumObject(string)
+  nameWithType: XofFile.OpenEnumObject(string?)
   nameWithType.vb: XofFile.OpenEnumObject(String)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject*
   name: OpenEnumObject
@@ -1704,13 +1707,13 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenEnumObject
   nameWithType: XofFile.OpenEnumObject
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.OpenSaveObject(System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  name: OpenSaveObject(string, XofFileFormats)
+  name: OpenSaveObject(string?, XofFileFormats)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_OpenSaveObject_System_String_JeremyAnsel_DirectX_D3DXof_XofFileFormats_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.OpenSaveObject(System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   name.vb: OpenSaveObject(String, XofFileFormats)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenSaveObject(string, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.OpenSaveObject(string?, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.OpenSaveObject(String, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  nameWithType: XofFile.OpenSaveObject(string, XofFileFormats)
+  nameWithType: XofFile.OpenSaveObject(string?, XofFileFormats)
   nameWithType.vb: XofFile.OpenSaveObject(String, XofFileFormats)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.OpenSaveObject*
   name: OpenSaveObject
@@ -1733,11 +1736,14 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterDefaultTemplates
   nameWithType: XofFile.RegisterDefaultTemplates
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates(JeremyAnsel.DirectX.D3DXof.XofFileEnumObject)
-  name: RegisterEnumObjectTemplates(XofFileEnumObject)
+  name: RegisterEnumObjectTemplates(XofFileEnumObject?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_RegisterEnumObjectTemplates_JeremyAnsel_DirectX_D3DXof_XofFileEnumObject_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates(JeremyAnsel.DirectX.D3DXof.XofFileEnumObject)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates(JeremyAnsel.DirectX.D3DXof.XofFileEnumObject)
-  nameWithType: XofFile.RegisterEnumObjectTemplates(XofFileEnumObject)
+  name.vb: RegisterEnumObjectTemplates(XofFileEnumObject)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates(JeremyAnsel.DirectX.D3DXof.XofFileEnumObject?)
+  fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates(JeremyAnsel.DirectX.D3DXof.XofFileEnumObject)
+  nameWithType: XofFile.RegisterEnumObjectTemplates(XofFileEnumObject?)
+  nameWithType.vb: XofFile.RegisterEnumObjectTemplates(XofFileEnumObject)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates*
   name: RegisterEnumObjectTemplates
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_RegisterEnumObjectTemplates_
@@ -1746,22 +1752,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterEnumObjectTemplates
   nameWithType: XofFile.RegisterEnumObjectTemplates
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(System.Byte[])
-  name: RegisterTemplates(byte[])
+  name: RegisterTemplates(byte[]?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_RegisterTemplates_System_Byte___
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(System.Byte[])
   name.vb: RegisterTemplates(Byte())
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(byte[])
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(byte[]?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(Byte())
-  nameWithType: XofFile.RegisterTemplates(byte[])
+  nameWithType: XofFile.RegisterTemplates(byte[]?)
   nameWithType.vb: XofFile.RegisterTemplates(Byte())
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(System.String)
-  name: RegisterTemplates(string)
+  name: RegisterTemplates(string?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFile.html#JeremyAnsel_DirectX_D3DXof_XofFile_RegisterTemplates_System_String_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(System.String)
   name.vb: RegisterTemplates(String)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(string)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(string?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates(String)
-  nameWithType: XofFile.RegisterTemplates(string)
+  nameWithType: XofFile.RegisterTemplates(string?)
   nameWithType.vb: XofFile.RegisterTemplates(String)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFile.RegisterTemplates*
   name: RegisterTemplates
@@ -1958,13 +1964,13 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectById
   nameWithType: XofFileEnumObject.GetDataObjectById
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectByName(System.String)
-  name: GetDataObjectByName(string)
+  name: GetDataObjectByName(string?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.html#JeremyAnsel_DirectX_D3DXof_XofFileEnumObject_GetDataObjectByName_System_String_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectByName(System.String)
   name.vb: GetDataObjectByName(String)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectByName(string)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectByName(string?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectByName(String)
-  nameWithType: XofFileEnumObject.GetDataObjectByName(string)
+  nameWithType: XofFileEnumObject.GetDataObjectByName(string?)
   nameWithType.vb: XofFileEnumObject.GetDataObjectByName(String)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileEnumObject.GetDataObjectByName*
   name: GetDataObjectByName
@@ -1993,22 +1999,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter
   nameWithType: XofFileFormatConverter
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(System.Byte[],System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  name: Convert(byte[], string, XofFileFormats)
+  name: Convert(byte[]?, string?, XofFileFormats)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.html#JeremyAnsel_DirectX_D3DXof_XofFileFormatConverter_Convert_System_Byte___System_String_JeremyAnsel_DirectX_D3DXof_XofFileFormats_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(System.Byte[],System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   name.vb: Convert(Byte(), String, XofFileFormats)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(byte[], string, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(byte[]?, string?, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(Byte(), String, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  nameWithType: XofFileFormatConverter.Convert(byte[], string, XofFileFormats)
+  nameWithType: XofFileFormatConverter.Convert(byte[]?, string?, XofFileFormats)
   nameWithType.vb: XofFileFormatConverter.Convert(Byte(), String, XofFileFormats)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(System.String,System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  name: Convert(string, string, XofFileFormats)
+  name: Convert(string?, string?, XofFileFormats)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.html#JeremyAnsel_DirectX_D3DXof_XofFileFormatConverter_Convert_System_String_System_String_JeremyAnsel_DirectX_D3DXof_XofFileFormats_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(System.String,System.String,JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   name.vb: Convert(String, String, XofFileFormats)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(string, string, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(string?, string?, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert(String, String, JeremyAnsel.DirectX.D3DXof.XofFileFormats)
-  nameWithType: XofFileFormatConverter.Convert(string, string, XofFileFormats)
+  nameWithType: XofFileFormatConverter.Convert(string?, string?, XofFileFormats)
   nameWithType.vb: XofFileFormatConverter.Convert(String, String, XofFileFormats)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileFormatConverter.Convert*
   name: Convert
@@ -2048,19 +2054,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData
   nameWithType: XofFileSaveData
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  name: AddData(XofFileEnumData)
+  name: AddData(XofFileEnumData?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileSaveData.html#JeremyAnsel_DirectX_D3DXof_XofFileSaveData_AddData_JeremyAnsel_DirectX_D3DXof_XofFileEnumData_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  nameWithType: XofFileSaveData.AddData(XofFileEnumData)
+  name.vb: AddData(XofFileEnumData)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData?)
+  fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
+  nameWithType: XofFileSaveData.AddData(XofFileEnumData?)
+  nameWithType.vb: XofFileSaveData.AddData(XofFileEnumData)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(System.Guid,System.String,System.Nullable{System.Guid},System.Byte[])
-  name: AddData(Guid, string, Guid?, byte[])
+  name: AddData(Guid, string?, Guid?, byte[]?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileSaveData.html#JeremyAnsel_DirectX_D3DXof_XofFileSaveData_AddData_System_Guid_System_String_System_Nullable_System_Guid__System_Byte___
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(System.Guid,System.String,System.Nullable{System.Guid},System.Byte[])
   name.vb: AddData(Guid, String, Guid?, Byte())
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(System.Guid, string, System.Guid?, byte[])
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(System.Guid, string?, System.Guid?, byte[]?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData(System.Guid, String, System.Guid?, Byte())
-  nameWithType: XofFileSaveData.AddData(Guid, string, Guid?, byte[])
+  nameWithType: XofFileSaveData.AddData(Guid, string?, Guid?, byte[]?)
   nameWithType.vb: XofFileSaveData.AddData(Guid, String, Guid?, Byte())
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData*
   name: AddData
@@ -2070,19 +2079,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddData
   nameWithType: XofFileSaveData.AddData
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  name: AddDataReference(XofFileEnumData)
+  name: AddDataReference(XofFileEnumData?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileSaveData.html#JeremyAnsel_DirectX_D3DXof_XofFileSaveData_AddDataReference_JeremyAnsel_DirectX_D3DXof_XofFileEnumData_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  nameWithType: XofFileSaveData.AddDataReference(XofFileEnumData)
+  name.vb: AddDataReference(XofFileEnumData)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(JeremyAnsel.DirectX.D3DXof.XofFileEnumData?)
+  fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
+  nameWithType: XofFileSaveData.AddDataReference(XofFileEnumData?)
+  nameWithType.vb: XofFileSaveData.AddDataReference(XofFileEnumData)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(System.String,System.Nullable{System.Guid})
-  name: AddDataReference(string, Guid?)
+  name: AddDataReference(string?, Guid?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileSaveData.html#JeremyAnsel_DirectX_D3DXof_XofFileSaveData_AddDataReference_System_String_System_Nullable_System_Guid__
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(System.String,System.Nullable{System.Guid})
   name.vb: AddDataReference(String, Guid?)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(string, System.Guid?)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(string?, System.Guid?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference(String, System.Guid?)
-  nameWithType: XofFileSaveData.AddDataReference(string, Guid?)
+  nameWithType: XofFileSaveData.AddDataReference(string?, Guid?)
   nameWithType.vb: XofFileSaveData.AddDataReference(String, Guid?)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveData.AddDataReference*
   name: AddDataReference
@@ -2163,19 +2175,22 @@ references:
   fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject
   nameWithType: XofFileSaveObject
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  name: AddData(XofFileEnumData)
+  name: AddData(XofFileEnumData?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.html#JeremyAnsel_DirectX_D3DXof_XofFileSaveObject_AddData_JeremyAnsel_DirectX_D3DXof_XofFileEnumData_
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
-  nameWithType: XofFileSaveObject.AddData(XofFileEnumData)
+  name.vb: AddData(XofFileEnumData)
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData?)
+  fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(JeremyAnsel.DirectX.D3DXof.XofFileEnumData)
+  nameWithType: XofFileSaveObject.AddData(XofFileEnumData?)
+  nameWithType.vb: XofFileSaveObject.AddData(XofFileEnumData)
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(System.Guid,System.String,System.Nullable{System.Guid},System.Byte[])
-  name: AddData(Guid, string, Guid?, byte[])
+  name: AddData(Guid, string?, Guid?, byte[]?)
   href: api/JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.html#JeremyAnsel_DirectX_D3DXof_XofFileSaveObject_AddData_System_Guid_System_String_System_Nullable_System_Guid__System_Byte___
   commentId: M:JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(System.Guid,System.String,System.Nullable{System.Guid},System.Byte[])
   name.vb: AddData(Guid, String, Guid?, Byte())
-  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(System.Guid, string, System.Guid?, byte[])
+  fullName: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(System.Guid, string?, System.Guid?, byte[]?)
   fullName.vb: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData(System.Guid, String, System.Guid?, Byte())
-  nameWithType: XofFileSaveObject.AddData(Guid, string, Guid?, byte[])
+  nameWithType: XofFileSaveObject.AddData(Guid, string?, Guid?, byte[]?)
   nameWithType.vb: XofFileSaveObject.AddData(Guid, String, Guid?, Byte())
 - uid: JeremyAnsel.DirectX.D3DXof.XofFileSaveObject.AddData*
   name: AddData
